@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Generated with https://github.com/google/shaka-packager version 308b92d16e-release-->
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd" xmlns:cenc="urn:mpeg:cenc:2013" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011" minBufferTime="PT2S" type="static" mediaPresentationDuration="PT59.1007080078125S">
+  <Period id="0">
+    <AdaptationSet id="0" contentType="video" maxWidth="720" maxHeight="480" frameRate="24000/1001" subsegmentAlignment="true" par="25:14">
+      <Representation id="0" bandwidth="510575" codecs="avc1.64001e" mimeType="video/mp4" sar="135:101" width="640" height="480">
+        <BaseURL>shaka480A.Million.Little.Things.S02E11.HDTV.x264-SVA[eztv].mkv.mp4</BaseURL>
+        <SegmentBase indexRange="841-944" timescale="24000">
+          <Initialization range="0-840"/>
+        </SegmentBase>
+      </Representation>
+      <Representation id="1" bandwidth="472160" codecs="avc1.64001e" mimeType="video/mp4" sar="90:101" width="720" height="360">
+        <BaseURL>shaka720A.Million.Little.Things.S02E11.HDTV.x264-SVA[eztv].mkv.mp4</BaseURL>
+        <SegmentBase indexRange="842-945" timescale="24000">
+          <Initialization range="0-841"/>
+        </SegmentBase>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet id="1" contentType="audio" subsegmentAlignment="true">
+      <Representation id="2" bandwidth="132235" codecs="mp4a.40.2" mimeType="audio/mp4" audioSamplingRate="48000">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+        <BaseURL>720A.Million.Little.Things.S02E11.HDTV.x264-SVA[eztv].mkv.mp4.mp4</BaseURL>
+        <SegmentBase indexRange="756-859" timescale="48000">
+          <Initialization range="0-755"/>
+        </SegmentBase>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
